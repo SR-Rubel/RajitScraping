@@ -1,10 +1,18 @@
-
 # Automation
 
 We are automation the outscraper api call with different criteria
 
 
-## Documentation
+## Environment setup
+#### step 1:
+install mini-conda from the below according to the OS
+[Mini-conda](https://docs.conda.io/en/latest/miniconda.htmlhttps://docs.conda.io/en/latest/miniconda.html)
+#### step 2:
+crate a conda environment using the below command
+
+```
+pip install -r requirements.txt
+```
 
 ## Input: 
 We are using a text file as input which will contain 3 information
