@@ -1,0 +1,3 @@
+zip_code area    limit    business_types
+95608,      CA,     5,        Restaurants, Real Estate Agents
+90011,      CA,     5,        Restaurants, Real Estate Agents
