@@ -44,6 +44,7 @@ class outscrapperHelper:
     def processInput(self,lines):
         print("Wait, we are fetching data for you...")
         i=0
+        merged = pd.DataFrame()
         for line in lines[1:]:
             cols = line.split(',')
             zip_code = cols[0]
@@ -74,5 +75,10 @@ class outscrapperHelper:
                 os.makedirs("./output/"+str(today))
             final.to_csv("output/"+str(today)+"/"+str(zip_code)+".csv")
             i=i+1
-            print(str(i)+ " csv file saved!!")
+            print(str(i)+ " csv file saved !!")
+            merged = pd.concat([merged,final],axis=0)
+        merged.reset_index(inplace=True)
+        merged.to_csv("./output/"+str(today)+"/"+"merged.csv")
+        print("Merged csv saved !!")
+        
         
