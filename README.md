@@ -8,22 +8,41 @@ We are automation the outscraper api call with different criteria
 install mini-conda from the below according to the OS
 [Mini-conda](https://docs.conda.io/en/latest/miniconda.htmlhttps://docs.conda.io/en/latest/miniconda.html)
 #### step 2:
-crate a conda environment using the below command
+crate a new conda environment using the below command
+```
+conda create --name outscraper
+
+```
+#### step 3:
+activate the newly created environment using the below command
+
+```
+conda activate outscraper
+```
+#### step 4:
+Go to the project directory where you have cloned the project from mini-conda terminal and enter below command 
 
 ```
 pip install -r requirements.txt
 ```
+#### step 5:
+After installation process finished  enter this command into terminal
+```
+jupyter lab
+```
+You will get this type of UI in the browser and can easily run this code from there
+![alt text](Screenshot.png)
 
 ## Input: 
 We are using a text file as input which will contain 3 information
 
 #### Look like this
 
-| Zip code | Business type     | Number of response need                       |
-| :-------- | :------- | :-------------------------------- |
-| `integer`      | `string` |  integer |
+| Zip code  | Area          | limit       | Business types |
+| :-------- | :-------------| :-----------| :------------- |
+| `integer` | `string`      |  `integer`  |  `string`      |
 
-#### Process of API calss
+#### Process of API call
 we are using outscrapper api for pulling data
 ```http
   GET https://api.app.outscraper.com/maps/search-v2
