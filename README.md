@@ -10,14 +10,14 @@ install mini-conda from the below according to the OS
 #### step 2:
 crate a new conda environment using the below command
 ```
-conda create --name outscraper
+conda create -n mining python=3.9.0
 
 ```
 #### step 3:
 activate the newly created environment using the below command
 
 ```
-conda activate outscraper
+conda activate mining
 ```
 #### step 4:
 Go to the project directory where you have cloned the project from mini-conda terminal and enter below command 
